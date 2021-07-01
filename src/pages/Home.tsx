@@ -3,16 +3,18 @@ import { useHistory } from 'react-router-dom'
 
 import { Button } from '../components/Button';
 
+// todos os assets precisam ser previamente importados
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import googleIconImg from '../assets/images/google-icon.svg'
 
 import '../styles/auth.scss'
 
+// importação simplificada da autenticação
 import { useAuth } from '../hooks/useAuth';
 
 export function Home() {
-  const history = useHistory()
+  const history = useHistory() // utilizado na navegação / histórico do navegador
   const { user, signInWithGoogle } = useAuth()
 
   async function handleCreateRoom() {

@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
 
-import { useAuth } from '../hooks/useAuth';
+// import { useAuth } from '../hooks/useAuth';
 
 import { Button } from '../components/Button';
 
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import '../styles/auth.scss'
-
 
 export function NewRoom() {
   // const { user } = useAuth()
